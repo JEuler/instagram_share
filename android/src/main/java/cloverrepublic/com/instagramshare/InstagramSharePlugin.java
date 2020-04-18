@@ -33,7 +33,7 @@ public class InstagramSharePlugin implements MethodCallHandler, PluginRegistry.R
     private String mType;
     private PluginRegistry.Registrar mRegistrar;
 
-    public InstagramSharePlugin(PluginRegistry.Registrar registrar) {
+    private InstagramSharePlugin(PluginRegistry.Registrar registrar) {
         mRegistrar = registrar;
     }
 
@@ -93,6 +93,7 @@ public class InstagramSharePlugin implements MethodCallHandler, PluginRegistry.R
         } catch (PackageManager.NameNotFoundException e) {
             return false;
         }
+        return false;
     }
 
     private void shareToInstagram(String path, String type) {

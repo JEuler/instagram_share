@@ -2,24 +2,26 @@ import 'package:flutter/material.dart';
 
 import 'package:instagram_share/instagram_share.dart';
 
-void main() => runApp(MyApp());
+void main() => runApp(ShareApp());
 
-class MyApp extends StatefulWidget {
+class ShareApp extends StatefulWidget {
   @override
-  _MyAppState createState() => _MyAppState();
+  _ShareAppState createState() => _ShareAppState();
 }
 
-class _MyAppState extends State<MyApp> {
+class _ShareAppState extends State<ShareApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: const Text('Plugin example app'),
+          title: const Text('Sharing App'),
         ),
-        body: MaterialButton(child: Text('Share'), onPressed: () {
-          InstagramShare.share('/', 'image');
-        }),
+        body: Center(
+          child: MaterialButton(child: Text('Share'), onPressed: () {
+            InstagramShare.share('/', 'image');
+          }),
+        ),
       ),
     );
   }

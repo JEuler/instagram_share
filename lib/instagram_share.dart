@@ -3,8 +3,7 @@ import 'dart:async';
 import 'package:flutter/services.dart';
 
 class InstagramShare {
-  static const MethodChannel _channel =
-      const MethodChannel('instagramshare');
+  static const MethodChannel _channel = const MethodChannel('instagramshare');
 
   /// method to share to Instagram
   /// It uses the ACTION_SEND Intent on Android
