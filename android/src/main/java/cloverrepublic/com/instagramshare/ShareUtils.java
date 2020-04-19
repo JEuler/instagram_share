@@ -18,7 +18,7 @@ class ShareUtils {
         if (Build.VERSION.SDK_INT < Build.VERSION_CODES.N) {
             uri = Uri.fromFile(file);
         } else {
-            uri = ShareExtendProvider.getUriForPath(authorities, file.getAbsolutePath());
+            uri = InstagramShareProvider.getUriForPath(authorities, file.getAbsolutePath());
         }
 
         return uri;

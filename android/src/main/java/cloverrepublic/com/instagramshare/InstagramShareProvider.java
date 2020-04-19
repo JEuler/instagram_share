@@ -18,7 +18,7 @@ import androidx.annotation.Nullable;
 import java.io.File;
 import java.io.FileNotFoundException;
 
-public class ShareExtendProvider extends ContentProvider {
+public class InstagramShareProvider extends ContentProvider {
 
     private static final String[] COLUMNS = {
             OpenableColumns.DISPLAY_NAME,

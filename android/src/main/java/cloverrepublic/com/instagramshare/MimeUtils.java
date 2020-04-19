@@ -10,7 +10,7 @@ import java.util.Map;
 /**
  * Created by zhouteng on 2020-03-29
  */
-public class MimeUtils {
+class MimeUtils {
 
     private static final String DEFAULT_MINE_TYPE = "application/octet-stream";
 
@@ -108,7 +108,7 @@ public class MimeUtils {
         }
     }
 
-    public static String getMineType(File file) {
+    static String getMineType(File file) {
         final int lastDot = file.getName().lastIndexOf('.');
         if (lastDot < 0) {
             return DEFAULT_MINE_TYPE;
