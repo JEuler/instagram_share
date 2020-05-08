@@ -1,0 +1,22 @@
+PODS:
+  - Flutter (1.0.0)
+  - instagram_share (0.0.1):
+    - Flutter
+
+DEPENDENCIES:
+  - Flutter (from `Flutter`)
+  - instagram_share (from `.symlinks/plugins/instagram_share/ios`)
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: Flutter
+  instagram_share:
+    :path: ".symlinks/plugins/instagram_share/ios"
+
+SPEC CHECKSUMS:
+  Flutter: 0e3d915762c693b495b44d77113d4970485de6ec
+  instagram_share: 5d306b856d443b760ba71504315316c1a3185abf
+
+PODFILE CHECKSUM: c34e2287a9ccaa606aeceab922830efb9a6ff69a
+
+COCOAPODS: 1.9.1

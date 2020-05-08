@@ -1,9 +1,9 @@
 #
 # To learn more about a Podspec see http://guides.cocoapods.org/syntax/podspec.html.
-# Run `pod lib lint instagramshare.podspec' to validate before publishing.
+# Run `pod lib lint instagram_share.podspec' to validate before publishing.
 #
 Pod::Spec.new do |s|
-  s.name             = 'instagramshare'
+  s.name             = 'instagram_share'
   s.version          = '0.0.1'
   s.summary          = 'Flutter plugin allowing to share media to instagram'
   s.description      = <<-DESC

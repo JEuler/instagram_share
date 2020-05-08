@@ -1,6 +1,6 @@
 name: instagram_share
 description: Flutter plugin allowing to share media to Instagram by using native mechanisms
-version: 0.1.6
+version: 0.1.7
 homepage: https://github.com/JEuler/instagram_share
 
 environment:
@@ -16,5 +16,8 @@ dev_dependencies:
 
 flutter:
   plugin:
-    androidPackage: cloverrepublic.com.instagramshare
-    pluginClass: InstagramSharePlugin
+    android:
+      package: cloverrepublic.com.instagramshare
+      pluginClass: InstagramSharePlugin
+    ios:
+      pluginClass: InstagramSharePlugin
