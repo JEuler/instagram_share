@@ -9,6 +9,12 @@
 .history
 .svn/
 
+# Visual Studio Code related
+.classpath
+.project
+.settings/
+.vscode/
+
 # IntelliJ related
 *.iml
 *.ipr

@@ -5,3 +5,9 @@
 .pub/
 
 build/
+
+# Visual Studio Code related
+.classpath
+.project
+.settings/
+.vscode/
