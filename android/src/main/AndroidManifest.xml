@@ -1,3 +1,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-  package="cloverrepublic.com.instagramshare">
+  package="cloverrepublic.com.instagramshare">\
+    <application>
+        <provider
+            android:name="cloverrepublic.com.instagramshare.InstagramShareProvider"
+            android:authorities="${applicationId}.instagramshare.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+        </provider>
+    </application>
 </manifest>
