@@ -1,3 +1,6 @@
+## 0.1.8
+* Android share fix
+
 ## 0.1.7
 * iOS build fix
 
