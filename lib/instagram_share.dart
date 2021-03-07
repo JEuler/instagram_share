@@ -10,7 +10,7 @@ class InstagramShare {
   /// [path] is file path
   /// [type]  "image" ,"video"
   static Future<void> share(String path, String type) {
-    assert(path != null && path.isNotEmpty);
+    assert(path.isNotEmpty);
     final Map<String, dynamic> params = <String, dynamic>{
       'path': path,
       'type': type,

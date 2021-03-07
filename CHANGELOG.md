@@ -1,3 +1,6 @@
+## 0.2.0
+* Null safety conversion
+
 ## 0.1.9
 * Android share fix
 
