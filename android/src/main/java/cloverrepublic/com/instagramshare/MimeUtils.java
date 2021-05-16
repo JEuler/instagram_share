@@ -12,7 +12,7 @@ import java.util.Map;
  */
 class MimeUtils {
 
-    private static final String DEFAULT_MINE_TYPE = "application/octet-stream";
+    private static final String DEFAULT_MIME_TYPE = "application/octet-stream";
 
     private static final Map<String, String> extensionToMimeTypeMap = new HashMap<>();
 
@@ -108,22 +108,22 @@ class MimeUtils {
         }
     }
 
-    static String getMineType(File file) {
+    static String getMimeType(File file) {
         final int lastDot = file.getName().lastIndexOf('.');
         if (lastDot < 0) {
-            return DEFAULT_MINE_TYPE;
+            return DEFAULT_MIME_TYPE;
         }
 
         final String extension = file.getName().substring(lastDot + 1).toLowerCase();
-        String mineType = extensionToMimeTypeMap.get(extension);
-        if (!TextUtils.isEmpty(mineType)) {
-            return mineType;
+        String mimeType = extensionToMimeTypeMap.get(extension);
+        if (!TextUtils.isEmpty(mimeType)) {
+            return mimeType;
         }
 
-        mineType = MimeTypeMap.getSingleton().getMimeTypeFromExtension(extension);
-        if (!TextUtils.isEmpty(mineType)) {
-            return mineType;
+        mimeType = MimeTypeMap.getSingleton().getMimeTypeFromExtension(extension);
+        if (!TextUtils.isEmpty(mimeType)) {
+            return mimeType;
         }
-        return DEFAULT_MINE_TYPE;
+        return DEFAULT_MIME_TYPE;
     }
 }

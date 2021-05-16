@@ -126,7 +126,7 @@ public class InstagramShareProvider extends ContentProvider {
     @Nullable
     @Override
     public String getType(@NonNull Uri uri) {
-        return MimeUtils.getMineType(getFileForUri(uri));
+        return MimeUtils.getMimeType(getFileForUri(uri));
     }
 
     public static Uri getUriForPath(String authority, String path) {
@@ -158,4 +158,3 @@ public class InstagramShareProvider extends ContentProvider {
         throw new UnsupportedOperationException("No external updates");
     }
 }
-
