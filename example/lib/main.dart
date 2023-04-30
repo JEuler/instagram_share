@@ -18,9 +18,11 @@ class _ShareAppState extends State<ShareApp> {
           title: const Text('Sharing App'),
         ),
         body: Center(
-          child: MaterialButton(child: Text('Share'), onPressed: () {
-            InstagramShare.share('/', 'image');
-          }),
+          child: MaterialButton(
+              child: Text('Share'),
+              onPressed: () {
+                InstagramShare.share('/', 'image');
+              }),
         ),
       ),
     );
