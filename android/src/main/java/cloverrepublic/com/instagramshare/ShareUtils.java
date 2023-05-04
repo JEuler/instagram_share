@@ -8,7 +8,6 @@ import android.os.Environment;
 import java.io.File;
 
 class ShareUtils {
-
     /// get the uri for file
     static Uri getUriForFile(Context context, File file) {
         String authorities = context.getPackageName() + ".instagramshare.fileprovider";
