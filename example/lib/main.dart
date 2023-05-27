@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import 'package:instagram_share/instagram_share.dart';
 
 void main() => runApp(ShareApp());

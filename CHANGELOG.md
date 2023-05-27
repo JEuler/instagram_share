@@ -1,3 +1,7 @@
+## 0.3.0
+* iOS sharing
+* Android plugin upgrade
+
 ## 0.2.0
 * Null safety conversion
 
