@@ -4,8 +4,8 @@ version: 0.2.1
 homepage: https://github.com/JEuler/instagram_share
 
 environment:
-  sdk: '>=2.12.0 <4.0.0'
-  flutter: ">=1.12.0"
+  sdk: '>=3.0.0 <4.0.0'
+  flutter: ">=3.24.0"
 
 dependencies:
   flutter:
@@ -21,3 +21,6 @@ flutter:
       android:
         package: cloverrepublic.com.instagramshare
         pluginClass: InstagramSharePlugin
+        dartPluginClass: InstagramShare
+      ios:
+        pluginClass: InstagramsharePlugin
